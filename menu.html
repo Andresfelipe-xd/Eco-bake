@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eco Bake — Menú</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --dark:#23291d;
+    --pink-bg:#f9c9dc;
+    --olive-menu:#93a86a;
+    --cream:#f6ecd9;
+    --text-dark:#23291d;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Poppins',sans-serif;color:var(--text-dark);background:#fff;}
+  a{text-decoration:none;color:inherit;}
+
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:var(--dark);
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 32px;
+  }
+  nav .logo{color:var(--pink-bg);font-family:'Archivo Black',sans-serif;font-size:1.3rem;}
+  .back-link{color:var(--cream);font-weight:600;font-size:.9rem;}
+
+  .menu-header{
+    background:var(--olive-menu);
+    text-align:center;
+    padding:70px 8% 50px;
+  }
+  .menu-header h1{
+    font-family:'Archivo Black',sans-serif;
+    font-size:clamp(2.6rem,8vw,4.5rem);
+    color:#111;
+    letter-spacing:.02em;
+  }
+  .menu-header .sub{
+    margin-top:14px;
+    font-weight:700;
+    letter-spacing:.08em;
+    font-size:.95rem;
+  }
+
+  .menu-body{
+    background:var(--olive-menu);
+    padding:10px 8% 80px;
+  }
+  .menu-section{max-width:1100px;margin:0 auto 50px;}
+  .menu-section h2{
+    text-align:center;
+    font-size:1.05rem;
+    letter-spacing:.08em;
+    margin-bottom:6px;
+  }
+  .menu-section .section-note{
+    text-align:center;
+    font-size:.9rem;
+    margin-bottom:20px;
+    font-style:italic;
+  }
+  .items-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:0;
+    border:1.5px solid #111;
+  }
+  .item{
+    border-right:1.5px solid #111;
+    border-bottom:1.5px solid #111;
+    padding:20px 22px;
+  }
+  .items-grid .item:last-child{border-right:1.5px solid #111;}
+  .item h3{
+    font-size:.85rem;
+    letter-spacing:.03em;
+    margin-bottom:6px;
+    display:flex;justify-content:space-between;gap:10px;
+  }
+  .item p{font-size:.85rem;line-height:1.5;}
+
+  .cta-order{
+    text-align:center;
+    margin-top:50px;
+  }
+  .cta-order a{
+    display:inline-block;
+    background:var(--pink-bg);
+    color:var(--text-dark);
+    padding:16px 34px;
+    font-weight:700;
+    border-radius:4px;
+    letter-spacing:.03em;
+  }
+
+  footer{
+    background:var(--dark);
+    color:var(--cream);
+    text-align:center;
+    padding:26px 8%;
+    font-size:.85rem;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">ECO BAKE</div>
+  <a class="back-link" href="index.html">← Volver al inicio</a>
+</nav>
+
+<header class="menu-header">
+  <h1>ECO BAKE</h1>
+  <div class="sub">POSTRES SOSTENIBLES · DULCES SOSTENIBLES</div>
+</header>
+
+<div class="menu-body">
+
+  <div class="menu-section">
+    <h2>SABORES NATURALES</h2>
+    <div class="items-grid">
+      <div class="item">
+        <h3><span>PASTEL DE LIMÓN NATURAL</span><span>$ 16.000</span></h3>
+        <p>Refreshing lemon cake made with fresh lemons and organic ingredients, bursting with flavor.</p>
+      </div>
+      <div class="item">
+        <h3><span>MUFFIN DE PLÁTANO</span><span>$ 7.000</span></h3>
+        <p>Moist banana muffin made with ripe bananas and whole grain flour, a perfect breakfast treat.</p>
+      </div>
+      <div class="item">
+        <h3><span>TARTA DE FRUTAS</span><span>$ 17.000</span></h3>
+        <p>Seasonal fruit tart with a crispy crust and creamy filling, showcasing nature's best flavors.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>DELICIAS ECO-AMIGABLES</h2>
+    <div class="items-grid">
+      <div class="item">
+        <h3><span>BOCADITOS DE COCO</span><span>$ 7.000</span></h3>
+        <p>Coconut bites made with shredded coconut and natural sweeteners, a tropical delight.</p>
+      </div>
+      <div class="item">
+        <h3><span>BARRITAS ENERGÉTICAS</span><span>$ 8.000</span></h3>
+        <p>Nutritious energy bars packed with seeds, nuts, and dried fruits, ideal for on-the-go.</p>
+      </div>
+      <div class="item">
+        <h3><span>GALLETAS DE CHÍA</span><span>$ 8.000</span></h3>
+        <p>Chia seed cookies with a crunchy texture and a hint of vanilla, perfect for a healthy treat.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>DULCES SOSTENIBLES</h2>
+    <div class="items-grid">
+      <div class="item">
+        <h3><span>TARTA DE CHOCOLATE VEGANA</span><span>$ 18.000</span></h3>
+        <p>Delicious vegan chocolate cake made with organic cocoa and natural sweeteners.</p>
+      </div>
+      <div class="item">
+        <h3><span>GALLETAS DE AVENA</span><span>$ 8.000</span></h3>
+        <p>Crunchy oatmeal cookies with dried fruits and nuts, perfect for a healthy snack.</p>
+      </div>
+      <div class="item">
+        <h3><span>BROWNIE SIN GLUTEN</span><span>$ 9.000</span></h3>
+        <p>Rich gluten-free brownie made with almond flour and dark chocolate, indulgent yet guilt-free.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>ECO BOX</h2>
+    <p class="section-note">Una opción para regalar o compartir</p>
+    <div class="items-grid">
+      <div class="item">
+        <h3><span>MINI BOX</span><span>$ 20.000</span></h3>
+        <p>2 cupcakes + 2 galletas</p>
+      </div>
+      <div class="item">
+        <h3><span>SWEET BOX</span><span>$ 38.000</span></h3>
+        <p>2 cupcakes + 2 brownies + 4 galletas</p>
+      </div>
+      <div class="item">
+        <h3><span>CELEBRATION BOX</span><span>$ 65.000</span></h3>
+        <p>Mini torta + 4 cupcakes + 6 galletas</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-order">
+    <a href="index.html">← Volver al sitio de Eco Bake</a>
+  </div>
+
+</div>
+
+<footer>Eco Bake © 2026 — Repostería sostenible</footer>
+
+</body>
+</html>
